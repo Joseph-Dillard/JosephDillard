@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power of AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .ai-power-section {
+            flex-grow: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-power-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c, #f1c40f);
+            background-size: 400% 400%;
+            animation: ai-power-gradientBG 15s ease infinite;
+        }
+
+        @keyframes ai-power-gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .ai-power-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .ai-power-textbox {
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .ai-power-textbox h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .ai-power-textbox p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #34495e; 
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        footer .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            color: #ecf0f1; 
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #3498db; 
+            text-decoration: underline;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="ai-power-section">
+            <div class="ai-power-background"></div>
+            <div class="ai-power-content">
+                <div class="ai-power-textbox">
+                    <h2>The Power of AI</h2>
+                    <p>This page demonstrates the power of AI and how a simple question such as "Can you make me an entertaining HTML page with CSS for my website?" can make something so amazing such as this. It's truly remarkable and soon, whether one likes it or not, AI will be apart of our every day lives.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo">
+                <a href="index.html"><img src="me.jpg" alt="Logo"></a>
+            </div>
+            <div class="links">
+                <a href="Technical.html">Technical</a>
+                <a href="Qualifications.html">Qualifications</a>
+                <a href="Service.html">Service</a>
+                <a href="AI.html">AI-Page</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
